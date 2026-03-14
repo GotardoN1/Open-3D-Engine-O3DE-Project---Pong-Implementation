@@ -29,3 +29,16 @@ class PaddleController:
         az_bus.TransformBus(az_bus.SET_WORLD_TM, self.entity_id, current_tm)
 
 print("Sistema de Paddle carregado com sucesso.")
+
+def on_collision(self, ball_entity, target_entity):
+    """
+    Lógica disparada quando a bola atinge um Paddle ou Parede.
+    """
+    if "Paddle" in target_entity.get_name():
+        # Inverte a direção horizontal (X) e aumenta a velocidade
+        self.velocity.x *= -1.1 
+        print(f"Colisão detectada com {target_entity.get_name()}! Aumentando velocidade.")
+    
+    elif "Wall" in target_entity.get_name():
+        # Inverte a direção vertical (Z)
+        self.velocity.z *= -1

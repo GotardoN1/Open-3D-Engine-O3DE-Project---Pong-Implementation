@@ -1,0 +1,14 @@
+{
+    "gemFormatVersion": 4,
+    "uuid": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e",
+    "name": "PongLogicGem",
+    "displayName": "Pong Game Logic",
+    "version": "1.0.0",
+    "description": "Contém os scripts Python e componentes para o funcionamento do Pong.",
+    "dependencies": [
+        {
+            "uuid": "6789abcd-1234-4321-abcd-6789abcdef01",
+            "name": "PythonAssetSystem"
+        }
+    ]
+}
